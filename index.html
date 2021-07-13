@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <script src="js/designer/elementes.js"></script>
+        <script src="js/designer/designer.js"></script>
+        <script src="js/designer/template.js"></script>
+        <script src="js/protocol/protocol.js"></script>
+        <script src="js/protocol/util.js"></script>
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+
+
+        <script src="js/main.js"></script>
+        <link type="text/css" rel="styleSheet" href="css/main.css"/>
+    </head>
+    <body>
+        <div class="dsn-top">
+            <!-- 工具栏 -->
+            <button>文件</button>
+            <button>编辑</button>
+            <button>帮助</button>
+
+
+        </div>
+        <div class="dsn-middle">
+            <div class="dsn-middle-left">
+                <!-- 左侧工具栏目 -->
+                <div class="dsn-tool-container" data-new-el-type="Text">
+                    <img >
+                    <p>文本</p>
+                </div>
+                <div class="dsn-tool-container" data-new-el-type="Bar">
+                    <img >
+                    <p>线条</p>
+                </div>
+                <div class="dsn-tool-container" data-new-el-type="BarCode">
+                    <img >
+                    <p>条形码</p>
+                </div>
+                <div class="dsn-tool-container" data-new-el-type="QrCode">
+                    <img >
+                    <p>二维码</p>
+                </div>
+                <div class="dsn-tool-container" data-new-el-type="BitMap">
+                    <img >
+                    <p>位图</p>
+                </div>
+                <div class="dsn-tool-container" data-new-el-type="Box">
+                    <img >
+                    <p>矩形</p>
+                </div>
+
+
+
+            </div>
+            <div class="dsn-middle-center">
+                <!-- 中间绘图区域 -->
+                <div class="dsn-middle-center-draw">
+                    <canvas id="drawCancas" style="width: 100%; height: 100%;">
+
+                    </canvas>
+                </div>
+
+            </div>
+            <div class="dsn-middle-right">
+                <!-- 右侧属性设置区域 -->
+                <div class="dsn-middle-right-top">
+                    模版名称：
+                    放大：
+                    选择元素：
+                    <p id='btn'>创建</p>
+                </div>
+                
+                <div class="dsn-middle-right-bottom">
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+
+
+    </body>
+
+
+
+    <div id="property-container-group" data-cpx-property-name="" style="display: none">
+
+        
+    </div>
+
+    <div id="property-container" class ="dsn-property-container"style="display: none;">
+        <div class="dsn-property-container-desc" data-property-name></div>
+        <div class="dsn-property-container-value"></div>
+    </div>
+
+
+    <div data-template-type="Text"  class="dsn-element-default" style="display: none;">
+        <input value="New text" />
+    </div>
+
+    <div data-template-type="Bar"   class="dsn-element-default" style="display: none;">
+        <div style="border: 1px black sold;background-color: black; width: 40px;height: 10px; top: 20; "></div>
+    </div>
+
+    <div data-template-type="QrCode"   class="dsn-element-default" style="display: none;"></div>
+
+    <div data-template-type="BarCode"   class="dsn-element-default" style="display: none;"></div>
+
+    <div data-template-type="Box"   class="dsn-element-default" style="display: none;"></div>
+
+    <div data-template-type="BitMap"   class="dsn-element-default" style="display: none;"></div>
+
+</html>

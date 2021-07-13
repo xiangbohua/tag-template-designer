@@ -1,0 +1,99 @@
+body {
+    position: relative;
+    /* width: 100%; */
+    /* padding: 2px; */
+}
+
+.dsn-top {
+    width: 100%;
+    height: 10%;
+    max-height: 30px;
+    background-color: red;
+}
+
+.dsn-top button {
+    width: 60px;
+    height: 100%;
+    float: left;
+}
+
+.dsn-middle {
+    
+    width: 100%;
+    height: 90%;
+    /* background-color: black; */
+}
+
+.dsn-middle-left {
+    float: left;
+    width: 10%;
+    /* max-width: 100px; */
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.dsn-middle-center {
+    float: left;
+    width: 70%;
+    height: 100%;
+    /* background-color: violet; */
+}
+
+.dsn-middle-center-draw {
+    width: 100%;
+    height: 100%;
+    border: 1px blue solid;
+}
+
+.dsn-middle-right {
+    width: 20%;
+    height: 100%;
+    /* max-width: 100px; */
+    float: right;
+    /* background-color: yellow; */
+}
+
+.dsn-middle-right-top {
+    height: 30%;
+}
+
+.dsn-middle-right-bottom {
+    position: absolute;
+    font-size: 8pt;
+    width: 100%;
+    height: 70%;
+    overflow-y: scroll;
+}
+
+.dsn-tool-container {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    background-color: thistle;
+}
+
+.dsn-tool-container img {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.dsn-tool-container p {
+    float: left;
+    width: 40%;
+    height: 40px;
+    margin: 0;
+    line-height: 40px;
+    text-align: left;
+}
+
+.dsn-property-container {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+
+.dsn-element-default {
+    width: 50px;
+    height: 50px;
+}
